@@ -1,9 +1,8 @@
 .picture { 
-  
 	width: 100%; 
 	height: 300px;
-  
 }
+
 
 .a {
 	font-family: 'Cairo', sans-serif;
@@ -11,6 +10,13 @@
 	animation: flicker 1.5s infinite alternate;
     color: #fff;
     width: 100%;
+
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
       text-shadow:
       0 0 4px #B026FF,
       0 0 11px #B026FF,
@@ -20,6 +26,12 @@
       0 0 90px #B026FF,
       0 0 100px #B026FF,
       0 0 150px #B026FF;
+  
+}
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
 }
 
 .b {
